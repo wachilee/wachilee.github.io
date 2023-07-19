@@ -26,3 +26,9 @@ img{
     display: block;
     margin: 0 auto;
 }
+#heading{
+    color: blue;
+}
+.popular{
+    border: 4px dotted red;
+}
