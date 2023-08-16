@@ -21,7 +21,14 @@ function statistic(array_numbers) {
     let min = array_numbers[0];
     let max = array_numbers[array_numbers.length - 1];
     let average = sumArray(array_numbers) / array_numbers.length;
-    return [min, max, average];
+    
+    if (array_numbers[0] == 0){
+        alert(`For the list that is empyt, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${max}`)
+    }
+    else{
+        alert(`For the list ${array_numbers}, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${mac}`)
+
+    }
 }
 
 function sumArray(array) {
@@ -34,6 +41,3 @@ function sumArray(array) {
 
 let numbersArray = readInput();
 let statistics = statistic(numbersArray);
-
-
-alert(`For the list ${numbersArray} the average is ${statistics[2].toFixed(2)}, the minimmum is ${statistics[0]}, and the maximum is ${statistics[1]}`)
