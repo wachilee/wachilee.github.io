@@ -23,7 +23,7 @@ function statistic(array_numbers) {
     let average = sumArray(array_numbers) / array_numbers.length;
     
     if (array_numbers[0] == 0){
-        alert(`For the list that is empyt, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${max}`)
+        alert(`For the list that is empty, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${max}`)
     }
     else{
         alert(`For the list ${array_numbers}, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${mac}`)
