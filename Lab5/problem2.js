@@ -4,6 +4,8 @@ function readInput() {
         let number = prompt("Enter an integer (a negative integer to quit): ");
         let numint = Number(number);
 
+        if (numint == 0) continue;
+
         if (!isNaN(numint) && Number.isInteger(numint) && numint > 0) {
             numbers.push(numint);
         } else if (numbers.length === 0) {
@@ -24,9 +26,10 @@ function statistic(array_numbers) {
     
     if (array_numbers[0] == 0){
         alert(`For the list that is empty, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${max}`)
+        
     }
     else{
-        alert(`For the list ${array_numbers}, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${mac}`)
+        alert(`For the list ${array_numbers}, the average is ${average.toFixed(2)}, the minimmum is ${min}, and the maximum is ${max}`)
 
     }
 }
